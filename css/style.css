@@ -8,36 +8,159 @@ body {
 
 section {
   height: 100vh;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 20px solid rgb(124, 0, 0);
+  color: rgb(199, 0, 0);
 }
 
 #accueil {
-  background-color: blue;
-  flex-direction: column;
+  background-color: rgb(61, 0, 0);
+  justify-content: space-around;
 }
 
+#accueil a {
+  color: rgb(199, 0, 0);
+}
+
+/*///////////////// Inscription Debut ///////////////////////////*/
 #inscription {
+  background-color: rgb(58, 58, 58);
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: large;
+}
+
+#inscription label {
+  padding: 10px;
+}
+
+#chk1,
+#chk2,
+#chk3,
+#chk4,
+#chk5 {
+  display: none;
+}
+
+#chk1:checked ~ .Role1 img {
+  border: 4px solid rgb(0, 180, 0);
+}
+
+#chk2:checked ~ .Role2 img {
+  border: 4px solid rgb(0, 180, 0);
+}
+
+#chk3:checked ~ .Role3 img {
+  border: 4px solid rgb(0, 180, 0);
+}
+
+#chk4:checked ~ .Role4 img {
+  border: 4px solid rgb(0, 180, 0);
+}
+
+#chk5:checked ~ .Role5 img {
+  border: 4px solid rgb(0, 180, 0);
+}
+
+#Reset {
+  background-color: rgb(61, 0, 0);
+  color: rgb(199, 0, 0);
+  padding: 15px;
+}
+
+#Reset:hover{
+  border: 2px solid red;
+  color: red;
+}
+
+#Remise {
   background-color: green;
+  color: #fff;
+  padding: 15px;
 }
 
+#Remise:hover {
+  border: 2px solid white;
+}
+/*///////////////////// Inscription Fin ///////////////////////*/
+
+/*////////////////////// Galerie Début ////////////////////////*/
 #galerie {
-  background-color: yellowgreen;
+  background-color: rgb(58, 58, 58);
+  justify-content: space-between;
 }
 
-#evenement {
-  background-color: yellow;
+#galerie h1 {
+  margin-bottom: 0;
 }
 
-#video {
-  background-color: orange;
+#galerie dl {
+  margin-top: 0;
 }
 
-#footer {
-  background-color: red;
+.artHero {
+  display: flex;
+  text-align: center;
 }
+
+.artHero img:hover{
+  transform: scale(1.5, 1.4);
+  border: 4px double rgb(255, 211, 13);
+  transition: all 1s;
+}
+
+.youtube {
+  display: flex;
+  text-align: center;
+}
+/*////////////////////// Galerie Fin //////////////////////////*/
+
+
+/*//////////////////// Tableau Debut //////////////////////////*/
+#tableau {
+  background-color: rgb(58, 58, 58);
+}
+/*////////////////////// Tableau Fin //////////////////////////*/
+
+
+/*////////////////////// Article Debut ////////////////////////*/
+#article {
+  background-color: rgb(58, 58, 58);
+  justify-content: flex-start;
+  padding-top: 30px;
+}
+
+.segmentArticle {
+  display: flex;
+  font-size: large;
+  text-align: justify;
+  background-color: rgb(61, 0, 0);
+}
+
+.segmentArticle dt {
+  margin-left: 40px;
+}
+
+.segmentArticle img:hover{
+  transform: scale(1.2, 1.2);
+  transition: all 1s;
+}
+/*////////////////////// Article Fin //////////////////////////*/
+
+/*///////////////////// PiedPage Debut ////////////////////////*/
+#piedPage {
+  background-color: rgb(58, 58, 58);
+  justify-content: space-evenly;
+  font-size: larger;
+}
+
+#piedPage a{
+  color: rgb(199, 0, 0);
+}
+/*///////////////////// PiedPage Fin //////////////////////////*/
 
 h1 {
   font-size: 3rem;
@@ -62,4 +185,9 @@ nav {
 a {
   color: white;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: aqua;
+  transition: color 1s;
 }

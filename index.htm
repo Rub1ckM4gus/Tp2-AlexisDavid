@@ -4,43 +4,313 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tp2-etape-1</title>
+    <title>Dota2 Roles</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tableau.css" />
   </head>
 
   <body>
     <nav>
       <a href="#accueil">Accueil</a>
       <a href="#inscription">Inscription</a>
+      <a href="#tableau">Tableau</a>
+      <a href="#article">Article</a>
       <a href="#galerie">Galerie</a>
-      <a href="#evenement">Événement</a>
-      <a href="#video">Vidéo</a>
-      <a href="#footer">Footer</a>
+      <a href="#piedPage">PiedPage</a>
     </nav>
+
     <section id="accueil">
-      <h1>TP2</h1>
-      <h2>Sujet: Ville de Montréal en photos</h2>
-      <h3>Auteur: Alexis David</h3>
+      <h1>TP2 - Les rôles des joueurs de Dota2</h1>
+      <h2>Auteur: Alexis David</h2>
+      <h3>1W1 - Mise en page web</h3>
+      <a href="https://github.com/Rub1ckM4gus/1w1"
+        >github.com/Rub1ckM4gus/1w1</a
+      >
       <p>
-        1W1-Mise en page Web - Techniques d'intégration multimédia - Collège de
-        Maisonneuve
+        Techniques d'intégration multimédia - Collège de Maisonneuve - Automne
+        2022
       </p>
     </section>
+
     <section id="inscription">
-      <h1>Inscription</h1>
+      <div>
+        <h1>Inscription</h1>
+        <h2>Entrer votre username et mot de passe pour vous connecter</h2>
+      </div>
+
+      <div>
+        <h3>username</h3>
+        <input type="text" name="" id="" />
+        <h3>mot de passe</h3>
+        <input type="password" name="" id="" />
+      </div>
+
+      <div>
+        <h3>Quel est vôtre rôle(s) préféré dans Dota2</h3>
+        <input type="checkbox" id="chk1" />
+        <label for="chk1" class="Role1"
+          ><img src="images/Pos1.PNG" alt="" width="70px" height="70px"
+        /></label>
+        <input type="checkbox" id="chk2" />
+        <label for="chk2" class="Role2"
+          ><img src="images/Pos2.PNG" alt="" width="70px" height="70px"
+        /></label>
+        <input type="checkbox" id="chk3" />
+        <label for="chk3" class="Role3"
+          ><img src="images/Pos3.PNG" alt="" width="70px" height="70px"
+        /></label>
+        <input type="checkbox" id="chk4" />
+        <label for="chk4" class="Role4"
+          ><img src="images/Pos4.PNG" alt="" width="70px" height="70px"
+        /></label>
+        <input type="checkbox" id="chk5" />
+        <label for="chk5" class="Role5"
+          ><img src="images/Pos5.PNG" alt="" width="70px" height="70px"
+        /></label>
+      </div>
+
+      <div>
+        <input type="button" value="Rénitialiser profil" id="Reset" />
+        <input type="button" value="Soumission profil" id="Remise" />
+      </div>
     </section>
+
+    <section id="tableau">
+      <h1>Tableau</h1>
+      <!-- table>(tr>(td>lorem2)*3)*4-->
+      <table class="tableauStats">
+        <tr>
+          <th>Stats moyenne</th>
+          <th>position 1</th>
+          <th>position 2</th>
+          <th>position 3</th>
+          <th>position 4</th>
+          <th>position 5</th>
+        </tr>
+        <tr>
+          <td>Gain Force</td>
+          <td>2.5</td>
+          <td>2.4</td>
+          <td>3.4</td>
+          <td>2.2</td>
+          <td>1.7</td>
+        </tr>
+        <tr>
+          <td>Gain Agilité</td>
+          <td>2.9</td>
+          <td>2.5</td>
+          <td>2.0</td>
+          <td>2.1</td>
+          <td>2.3</td>
+        </tr>
+        <tr>
+          <td>Gain Intelligence</td>
+          <td>2.4</td>
+          <td>3.5</td>
+          <td>1.5</td>
+          <td>2.7</td>
+          <td>3.0</td>
+        </tr>
+        <tr>
+          <td>Valeur nette</td>
+          <td>40 000</td>
+          <td>35 000</td>
+          <td>27 000</td>
+          <td>20 000</td>
+          <td>14 000</td>
+        </tr>
+        <tr>
+          <td>Type d'Ultime</td>
+          <td>Buff</td>
+          <td>Sort de Teamfight</td>
+          <td>Utilité</td>
+          <td>Immobilisement</td>
+          <td>Soin</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="article">
+      <h1>Article</h1>
+      <div class="segmentArticle">
+        <dl>
+          <dt><h3>Qu'es-ce qu'un rôle</h3></dt>
+          <dd>
+            Dans Dota 2, deux équipes de 5 s'affrontent avec différents héros.
+            Dans chaques équipes, chaques joueurs doivent avoir un certain rôle
+            pour pouvoir accomplir tout les objectifs nécessaires pour assurer
+            la victoire. 
+          </dd>
+          <dd><img src="images/Roles.jpg" alt="" width="400px" height="250px" /></dd>
+          <dd>les positions comme mentionné plus tôt, est l'ordre de
+            priorité dans laquelle les ressources seront distribués. 1er étant
+            le plus dépendant et 5eme étant le moin dépendant sur les ressources
+            du jeu.</dd>
+        </dl>
+        <dl>
+          <dt><h3>Tâches à diviser</h3></dt>
+          <dd>
+            Une fois les rôles assigné a chauqes joueurs, il devient temps de
+            prendre un héro qui sera capable de remplir le rôle. Position1, a
+            cause du nombre de ressources qu'il a besoin pour être compétent,
+            est souvent le héro qui sera en charge de faire gagner la partie
+            pour sont équipe en faisant le plus de dégât possible.
+          </dd>
+          <dd><img
+            src="images/teamFight.jpg" alt=" width="400px" height="250px" /></dd>
+          <dd> 
+            Position5
+            quant à elle, doit être un héro qui reste puissant même avec peu de
+            ressources, très souvent ceux avec des sort très disruptifs ou de
+            soins seront assigner cette position. </dd>
+        </dl>
+      </div>
+    </section>
+
     <section id="galerie">
       <h1>Galerie</h1>
+      <div class="artHero">
+        <dl>
+          <h3>Exemple Pos1</h3>
+          <img
+            src="images/juggernaut.png"
+            alt=""
+            width="150px"
+            height="100px"
+          />
+          <img src="images/specter.jpg" alt="" width="150px" height="100px" />
+        </dl>
+        <dl>
+          <h3>Exemple Pos2</h3>
+          <img
+            src="images/stormSpirit.jpg"
+            alt=""
+            width="150px"
+            height="100px"
+          />
+          <img
+            src="images/shadowFiend.webp"
+            alt=""
+            width="150px"
+            height="100px"
+          />
+        </dl>
+        <dl>
+          <h3>Exemple Pos3</h3>
+          <img
+            src="images/broodMother.jpg"
+            alt=""
+            width="150px"
+            height="100px"
+          />
+          <img src="images/underLord.jpg" alt="" width="150px" height="100px" />
+        </dl>
+        <dl>
+          <h3>Exemple Pos4</h3>
+          <img
+            src="images/nyxAssassin.webp"
+            alt=""
+            width="150px"
+            height="100px"
+          />
+          <img src="images/Techies.jpg" alt="" width="150px" height="100px" />
+        </dl>
+        <dl>
+          <h3>Exemple Pos5</h3>
+          <img src="images/bane.jpg" alt="" width="150px" height="100px" />
+          <img
+            src="images/witchDoctor.jpg"
+            alt=""
+            width="150px"
+            height="100px"
+          />
+        </dl>
+      </div>
+      <dl class="youtube">
+        <dd>
+          <iframe
+            width="360"
+            height="215"
+            src="https://www.youtube.com/embed/3qEIQCffp0I"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </dd>
+        <dd>
+          <iframe
+            width="360"
+            height="215"
+            src="https://www.youtube.com/embed/xdKqdupE4_Y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </dd>
+      </dl>
     </section>
-    <section id="evenement">
-      <h1>Événement</h1>
-    </section>
-    <section id="video">
-      <h1>Vidéo</h1>
-    </section>
-    <section id="footer">
+
+    <section id="piedPage">
       <h1>Pied de page</h1>
+      <a href="https://www.cmaisonneuve.qc.ca">https://www.cmaisonneuve.qc.ca</a>
+      <p>Projet en associassion avec le département de TIM qui contiens les cours de (Mise en page web), (conception graphique) et autres.</p>
+      <p>Addresse: 3800 Sherbrooke St E, Montréal, Québec H1X 2A2</p>
+      <div class="logos">
+        <img
+          src="https://s2.svgbox.net/social.svg?ic=facebook&color=red"
+          width="16"
+          height="16"
+          alt=""
+        />
+        <img
+          src="https://s2.svgbox.net/social.svg?ic=github&color=red"
+          width="16"
+          height="16"
+          alt=""
+        />
+        <img
+          src="https://s2.svgbox.net/social.svg?ic=instagram&color=red"
+          width="16"
+          height="16"
+          alt=""
+        />
+        <img
+          src="https://s2.svgbox.net/social.svg?ic=messenger&color=red"
+          width="16"
+          height="16"
+          alt=""
+        />
+        <img
+          src="https://s2.svgbox.net/social.svg?ic=paypal&color=red"
+          width="16"
+          height="16"
+          alt=""
+        />
+        <img
+          src="https://s2.svgbox.net/social.svg?ic=twitter&color=red"
+          width="16"
+          height="16"
+          alt=""
+        />
+        <img
+          src="https://s2.svgbox.net/social.svg?ic=youtube&color=red"
+          width="16"
+          height="16"
+          alt=""
+        />
+        <img
+          src="https://s2.svgbox.net/social.svg?ic=wikipedia&color=red"
+          width="16"
+          height="16"
+          alt=""
+        />
+      </div>
+      <p>Avis de confidentialité | Privacy Notice</p>
     </section>
   </body>
 </html>
